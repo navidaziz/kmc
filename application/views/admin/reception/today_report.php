@@ -76,26 +76,9 @@
               <td><?php echo $report->total_receipt_cancelled; ?></td>
               <td><?php echo $report->total_count; ?></td>
               <td><?php echo $report->total_dis_count; ?> - <?php echo $report->total_discount; ?></td>
-              <td>
-                <?php switch ($report->test_group_id) {
-                  case '86':
-                    $total_income_from_drs += $report->total_count * 100;
-                    echo $report->total_count * 100;
-                    break;
-                  case '104':
-                    $total_income_from_drs += $report->total_count * 200;
-                    echo $report->total_count * 200;
-                    break;
-                  case '114':
-                    $total_income_from_drs += $report->total_count * 500;
-                    echo $report->total_count * 500;
-                    break;
-                  default:
-                    $total_income_from_drs += $report->total_sum;
-                    echo $report->total_sum;
-                    break;
-                } ?>
-              </td>
+              <th style="text-align: center;"><?php echo $report->shares;
+                                              $total_income_from_drs += $report->shares;
+                                              ?></th>
             </tr>
           <?php } ?>
           <tr>
@@ -125,7 +108,9 @@
             <th>Cancelled</th>
             <th>Confirmed</th>
             <th>Discount</th>
-            <th>Total RS</th>
+            <th>Dr. Total</th>
+            <th>Shares Total</th>
+            <th>Total Rs</th>
           </tr>
           <?php
           $count = 1;
@@ -137,7 +122,12 @@
               <td><?php echo $report->total_receipt_cancelled; ?></td>
               <td><?php echo $report->total_count; ?></td>
               <td><?php echo $report->total_dis_count; ?> - <?php echo $report->total_discount; ?></td>
-
+              <td>
+                <?php echo $report->total_sum - $report->shares; ?>
+              </td>
+              <td>
+                <?php echo $report->shares; ?>
+              </td>
               <td><?php echo $report->total_sum; ?></td>
             </tr>
           <?php } ?>
@@ -147,7 +137,8 @@
             <th style="text-align: center;"><?php echo $today_total_OPD_reports[0]->total_receipt_cancelled; ?></th>
             <th style="text-align: center;"><?php echo $today_total_OPD_reports[0]->total_count ?></th>
             <td><?php echo $today_total_OPD_reports[0]->total_dis_count; ?> - <?php echo $today_total_OPD_reports[0]->total_discount; ?></td>
-
+            <th style="text-align: center;"><?php echo $today_total_OPD_reports[0]->total_sum - $today_total_OPD_reports[0]->shares ?></th>
+            <th style="text-align: center;"><?php echo $today_total_OPD_reports[0]->shares ?></th>
             <th style="text-align: center;"><?php echo $today_total_OPD_reports[0]->total_sum ?></th>
           </tr>
         </table>

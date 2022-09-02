@@ -96,7 +96,7 @@
 			<table class="table">
 				<tr>
 					<td>
-						<h3 style="text-align: center;"> Alkhidmat Diagnostic Center Chitral </h3>
+						<h3 style="text-align: center;"> Kashghar Medical Center Chitral </h3>
 						<h5 style="text-align: center;">Pharmacy</h5>
 						<h4 style="text-align: center;">Items Return to Supplier </h4>
 					</td>
@@ -186,7 +186,7 @@
 			?> </p>
 
 			<p class="divFooter" style="text-align: right;"><b><?php echo $user_data->user_title; ?> <?php echo $user_data->role_title; ?></b>
-				<br />Alkhidmat Diagnostic Center Chitral City <br />
+				<br />Kashghar Medical Center Chitral <br />
 				<strong>Printed at: <?php echo date("d, F, Y h:i:s A", time()); ?></strong>
 			</p>
 

@@ -248,7 +248,7 @@
 
               <p class="divFooter" style="text-align: right;"><b><?php echo $user_data->user_title; ?><br />
                   <?php echo $user_data->role_title; ?></b>
-                <br />Alkhidmat Diagnostic Center<br /> Chitral City
+                <br />Kashghar Medical Center<br /> Chitral City
               </p>
             </td>
           </tr>

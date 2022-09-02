@@ -93,7 +93,7 @@
 <body>
   <page size='A4'>
     <div style="padding: 5px;  padding-left:20px; padding-right:20px; " contenteditable="true">
-      <h3 style="text-align: center;"> Alkhidmat Diagnostic Center Chitral </h3>
+      <h3 style="text-align: center;"> Kashghar Medical Center Chitral </h3>
       <h4 style="text-align: center;">Items Wise Sale Report From <?php echo date('d M, Y', strtotime($startdate)) . " - " . date('d M, Y', strtotime($enddate)); ?></h4>
 
       <h5>Item Sale list</h5>
@@ -200,7 +200,7 @@
       ?> </p>
 
       <p class="divFooter" style="text-align: right;"><b><?php echo $user_data->user_title; ?> <?php echo $user_data->role_title; ?></b>
-        <br />Alkhidmat Diagnostic Center Chitral City <br />
+        <br />Kashghar Medical Center Chitral <br />
         <strong>Printed at: <?php echo date("d, F, Y h:i:s A", time()); ?></strong>
       </p>
 

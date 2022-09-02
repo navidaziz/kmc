@@ -50,8 +50,8 @@ if (!in_array($current_action_id, $allowed_modules)) { ?>
                   <!-- <a href="<?php echo site_url(ADMIN_DIR . $this->session->userdata("role_homepage_uri")); ?>"> 
         <img src="<?php echo site_url("assets/uploads/" . $log); ?>" alt="<?php echo $system_global_settings[0]->system_title ?>" 
         title="<?php echo $system_global_settings[0]->system_title ?>" class="img-responsive " style="width:40px !important;"></a>-->
-                  <h4 style="margin-top: -5px;"><strong>Alkhidmat Chitral</strong></h4>
-                  <h5 style="margin-top: -5px;">Diagnostic Center</h5>
+                  <h4 style="margin-top: -5px;"><strong>Kashghar Medical Center</strong></h4>
+                  <h5 style="margin-top: -5px;">Chitral</h5>
                 </td>
                 <td>
                   <ul class="nav navbar-nav pull-right" style="margin-top: -20px;">

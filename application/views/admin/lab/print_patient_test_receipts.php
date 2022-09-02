@@ -90,9 +90,9 @@
 
               <tr>
                 <td style="text-align: center;">
-                  <h4>Al-Khidmat Diagnostic Center</h4>
-                  <h6 style="font-size: 11px;">Chinar Inn Market Shahi Bazar Near Ataliq Bridge, Chitral
-                    <br /> PHONE 0943-412814
+                  <h4>Kashghar Medical Center Chitral</h4>
+                  <h6 style="font-size: 11px;">Dewan Trade Center Airport Road Kuprisht Chitral
+                    <br /> PHONE 0943-412224
                   </h6>
                   <h5>RECEIPT NO: <?php echo $invoice_detail->invoice_id; ?>
                     <?php if ($invoice_detail->receipt_print == 0) { ?>

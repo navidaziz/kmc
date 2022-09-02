@@ -21,7 +21,7 @@
 </div>
 <table class="table table1 table-bordered">
     <tr>
-        <th colspan="2" style="font-size: 17px !important; text-align:center"> AL KHIDMAT DIAGNOSTIC CENTER Chitral
+        <th colspan="2" style="font-size: 17px !important; text-align:center"> AL KHIDMAT Chitral Chitral
         </th>
     </tr>
     <tr>

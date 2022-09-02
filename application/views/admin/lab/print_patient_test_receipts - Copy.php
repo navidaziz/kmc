@@ -83,9 +83,9 @@
   <page size='A4' style="font-size: 9px !important; color: black !important;">
     <div style="padding: 0px;" contenteditable="tr ue">
       <div style="text-align: center; padding-top: 10px;">
-        <h4>Al-Khidmat Diagnostic Center</h4>
+        <h4>Kashghar Medical Center Chitral</h4>
         <small style="font-size: 12px;">Chinar Inn Market Shahi Bazar Near Ataliq, Bridge Chitral
-          <br /> PHONE 0943-412814</small>
+          <br /> PHONE 0943-412224</small>
         <br />
         <strong style="font-size: 12px;">RECEIPT NO: <?php echo $invoice_detail->invoice_id; ?> <br /> Token NO: <?php echo $invoice_detail->test_token_id; ?></strong>
 
