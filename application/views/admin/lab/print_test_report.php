@@ -22,6 +22,7 @@
   <style>
     body {
       background: rgb(204, 204, 204);
+
     }
 
     page {
@@ -72,6 +73,8 @@
         color: black;
       }
 
+
+
     }
 
 
@@ -92,13 +95,24 @@
 
 <body>
   <page size='A4'>
-    <div style="padding: 40px;" contenteditable="true">
+    <table class="table">
+      <tr>
+        <td style="text-align: center;">
+          <img style="width: 80px;" src="<?php echo site_url("assets/logo.png"); ?>" alt="<?php echo $system_global_settings[0]->system_title ?>" title="<?php echo $system_global_settings[0]->system_title ?>" style="width:250px !important" />
+          <h4><?php echo $system_global_settings[0]->system_title ?></h4>
+          <small><?php echo $system_global_settings[0]->system_sub_title ?> - Phone No. 0943-412224</small>
+
+        </td>
+
+      </tr>
+    </table>
+    <div style="padding: 40px; padding-top:0px !important;" contenteditable="true">
 
       <table style="width: 100%;">
         <thead>
           <tr>
             <td>
-              <table style="width: 100%; margin-top: 40px;">
+              <table style="width: 100%; margin-top: 5px;">
                 <tr>
                   <td style="width: 45%;">
 
@@ -246,9 +260,12 @@
               $user_data = $this->db->query($query)->result()[0];
               ?> </p>
 
-              <p class="divFooter" style="text-align: right;"><b><?php echo $user_data->user_title; ?><br />
-                  <?php echo $user_data->role_title; ?></b>
-                <br />Kashghar Medical Center<br /> Chitral City
+              <p class="divFooter" style="text-align: right;">
+                <b><?php echo $user_data->user_title; ?> (<?php echo $user_data->role_title; ?>)</b>
+                <br />KMC Chitral
+              </p>
+              <p style="text-align: center;">
+                <small>Print @ <?php echo date("d M, Y h:m:s A"); ?></small>
               </p>
             </td>
           </tr>
