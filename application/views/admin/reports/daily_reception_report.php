@@ -257,7 +257,7 @@
           <th>ECG INC</th>
           <th>X-RAY INC</th>
           <th>ULTRASOUND INC</th>
-          <th>Admin Alkhidmat</th>
+          <th>Admin KCM</th>
           <th>Reception</th>
         </tr>
 
