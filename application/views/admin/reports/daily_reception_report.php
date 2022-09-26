@@ -257,7 +257,7 @@
           <th>ECG INC</th>
           <th>X-RAY INC</th>
           <th>ULTRASOUND INC</th>
-          <th>Admin KCM</th>
+          <th>Admin KMC</th>
           <th>Reception</th>
         </tr>
 
