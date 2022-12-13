@@ -37,9 +37,12 @@ class Patients extends Admin_Controller
     {
 
         $where = "`patients`.`status` IN (0, 1) ";
-        $data = $this->patient_model->get_patient_list($where);
-        $this->data["patients"] = $data->patients;
-        $this->data["pagination"] = $data->pagination;
+        // $data = $this->patient_model->get_patient_list($where);
+        // $this->data["patients"] = $data->patients;
+        // $this->data["pagination"] = $data->pagination;
+        $this->data["patients"] = $this->patient_model->get_patient_list($where, false);
+        //$this->data["patients"] = $data->patients;
+        $this->data["pagination"] = false;
         $this->data["title"] = $this->lang->line('Patients');
         $this->data["view"] = ADMIN_DIR . "patients/patients";
         $this->load->view(ADMIN_DIR . "layout", $this->data);
