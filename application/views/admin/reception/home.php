@@ -457,6 +457,10 @@ echo form_open_multipart(ADMIN_DIR . "reception/save_data", $add_form_attr);
               <!-- <td><?php echo $test->patient_mobile_no; ?></td> -->
               <td><?php echo $test->patient_gender; ?></td>
               <td>
+
+                <?php if ($test->receipt_print) { ?>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                <?php  } ?>
                 <a style="margin-left: 10px;" target="new" href="<?php echo site_url(ADMIN_DIR . "lab/print_patient_test_receipts/$test->invoice_id") ?>"><i class="fa fa-print" aria-hidden="true"></i> Receipt</a>
 
               </td>
