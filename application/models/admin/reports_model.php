@@ -100,7 +100,7 @@ class Reports_model extends MY_Model
 
 		return $data;
 	}
-
+ 
 	public function today_recp_report($date)
 	{
 		$query = "SELECT
