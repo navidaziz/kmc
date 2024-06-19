@@ -111,6 +111,8 @@ class Login extends Admin_Controller
 
                 redirect(ADMIN_DIR . $homepage_path);
             } else {
+                echo "user name passowrd not correct";
+                exit();
                 $this->session->set_flashdata('msg', 'User Name or Password is incorrect or Your Are not Allowed to Access this Admin Section ');
                 redirect(ADMIN_DIR . "login");
             }
