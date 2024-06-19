@@ -61,11 +61,11 @@ class Login extends Admin_Controller
 
             //get the user
             $user = $this->user_m->getBy($input_values, TRUE);
-            var_dump($user);
-            //exit;
-
+           
             if ($user) {
-
+                var_dump($user);
+                exit;
+    
                 //
                 $role_homepage_id = $this->role_m->getCol("role_homepage", $user->role_id);
                 $role_homepage_parent_id = $this->module_m->getCol("parent_id", $role_homepage_id);
