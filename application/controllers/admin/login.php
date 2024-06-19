@@ -61,8 +61,8 @@ class Login extends Admin_Controller
 
             //get the user
             $user = $this->user_m->getBy($input_values, TRUE);
-            var_dump($user);
-            exit;
+            //var_dump($user);
+            //exit;
 
             if ($user) {
 
