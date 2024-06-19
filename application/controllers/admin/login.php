@@ -64,7 +64,7 @@ class Login extends Admin_Controller
             //var_dump($user);
             //exit;
 
-            if ($user) {
+            if (count($user)>0) {
 
                 //
                 $role_homepage_id = $this->role_m->getCol("role_homepage", $user->role_id);
@@ -105,8 +105,8 @@ class Login extends Admin_Controller
 
                 //add to session
                 $this->session->set_userdata($user_data);
-                var_dump($this->session->userdata);
-                exit;
+                //var_dump($this->session->userdata);
+                //exit;
                 $this->session->set_flashdata('msg_success', "<strong>" . $user->user_title . '</strong><br/><i>welcome to admin panel</i>');
 
                 redirect(ADMIN_DIR . $homepage_path);
