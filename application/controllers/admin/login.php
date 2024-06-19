@@ -61,11 +61,11 @@ class Login extends Admin_Controller
 
             //get the user
             $user = $this->user_m->getBy($input_values, TRUE);
-           
+            //var_dump($user);
+            //exit;
+
             if ($user) {
-                var_dump($user);
-                exit;
-    
+
                 //
                 $role_homepage_id = $this->role_m->getCol("role_homepage", $user->role_id);
                 $role_homepage_parent_id = $this->module_m->getCol("parent_id", $role_homepage_id);
@@ -105,13 +105,12 @@ class Login extends Admin_Controller
 
                 //add to session
                 $this->session->set_userdata($user_data);
-                //var_dump($this->session->userdata);
-                //exit;
+                var_dump($this->session->userdata);
+                exit;
                 $this->session->set_flashdata('msg_success', "<strong>" . $user->user_title . '</strong><br/><i>welcome to admin panel</i>');
 
                 redirect(ADMIN_DIR . $homepage_path);
             } else {
-                
                 $this->session->set_flashdata('msg', 'User Name or Password is incorrect or Your Are not Allowed to Access this Admin Section ');
                 redirect(ADMIN_DIR . "login");
             }
